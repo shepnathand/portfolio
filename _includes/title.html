@@ -1,0 +1,14 @@
+{%- comment -%}
+pass title.html your page title
+{%- include title.html title=title -%}
+{%- endcomment -%}
+
+{%- if include.title -%}
+{%- assign title = include.title -%}
+{%- else -%}
+{%- assign title = page.title -%}
+{%- endif -%}
+
+<div class="page-title">
+	<h2>{{ title }}</h2>
+</div>

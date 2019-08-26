@@ -1,0 +1,27 @@
+<div class="{% for tag in post.tags %}{{ tag }} {% endfor %}col-sm-12 py-2">
+	<div id="post" class="card h-100 card-body">
+		{% if post.link %}
+		{%- if post.cover -%}
+		<a class="card" href="{{ post.link }}"><img class="cover" src="{{ post.cover }}"></a>
+		{%- endif -%}
+		<a class="link" href="{{ post.link }}" style="font-size: 115%">{{ post.title }}</a>
+		{% else %}
+		{%- if post.cover -%}
+		<a class="card" href="{{ post.url | absolute_url }}"><img class="cover" src="{{ post.cover }}"></a>
+		{%- endif -%}
+		<a class="link" href="{{ post.url | absolute_url }}" style="font-size: 115%">{{ post.title }}</a>
+		{% endif %}
+		<a class="metaData" style="font-size: 85%; line-height: 85%;">{{ post.date | date: date_format }} {%- if post.author -%} — {{ post.author }} {%- endif -%}</a>
+		{%- if post.excerpt -%}
+		<a class="excerpt" style="margin-top: 4px;">{{ post.excerpt }}</a>
+		{%- endif -%}
+		<div class="tag-container" style="display: inline; font-size: 85%; color: #777;"> 
+			{% if post.tags.size > 0 %}
+			tags: 
+			{% for tag in post.tags %}
+			<span id="tag" value="{{ tag }}"><a href="/tag/{{ tag }}.html">{{ tag }}</a></span><a> </a>
+			{% endfor %}
+			{% endif %}
+		</div>
+	</div>
+</div>
