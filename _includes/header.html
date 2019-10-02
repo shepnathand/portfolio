@@ -1,32 +1,23 @@
-<header class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      {%- assign default_paths = site.pages | map: "path" -%}
-      {%- assign page_paths = site.header_pages | default: default_paths -%}
-      <ul class="navbar-nav sticky-top d-flex w-50 mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" rel="author" href="{{  | relative_url }}">
-          	{{ site.title | escape }}
-          	<span class="sr-only">(current)</span>
-          </a>
-        </li>
-      </ul>
-      <ul class="nav navbar-nav ml-auto sticky-top w-65 justify-content-end">
-        {%- if page_paths -%}
-        <!-- populate navbar -->
-        {%- for path in page_paths -%}
-          {%- assign my_page = site.pages | where: "path", path | first -%}
-          {%- if "About Blog Contact Work" contains my_page.title -%}
-              <li class="nav-item">
-                <a class="nav-link" href="{{ my_page.url | relative_url }}">
-                  {{ my_page.title | escape }}
-                </a>
-              </li>
-          {%- endif -%}
-        {%- endfor -%}
-        {%- endif -%}
-      </ul>
-    </div>
-</header>
+{%- assign default_paths = site.pages | map: "path" -%}
+{%- assign page_paths = site.header_pages | default: default_paths -%}
+<div class="topnav" id="top">
+  <div class="site-title">
+    <a class="active" rel="author" href="{{ "/" | relative_url }}">
+      {{ site.title | escape }}
+    </a>
+  </div>
+  <hr></hr>
+  <div class="topnav-centered">
+    {%- if page_paths -%}
+    <!-- populate navbar -->
+    {%- for path in page_paths -%}
+      {%- assign my_page = site.pages | where: "path", path | first -%}
+      {%- if 'archive data-vis development writing' contains my_page.title -%}
+        <a href="{{ my_page.url | relative_url }}">
+          {{ my_page.title | escape }}
+        </a>
+      {%- endif -%}
+    {%- endfor -%}
+    {%- endif -%}
+  </div>
+</div>

@@ -7,7 +7,7 @@ layout: default
 {% include title.html %}
 {% else %}
 {% capture custom_title %}
-Posts Tagged: {{ page.tag }}{% endcapture %}
+{{ page.tag }}{% endcapture %}
 {% include title.html title=custom_title %}
 {% endif %}
 <div class="page">

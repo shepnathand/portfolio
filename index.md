@@ -1,11 +1,10 @@
 ---
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-
 layout: home
+permalink: /
 ---
 
-# sheppard-designs
+I'm Nathan. I have experience using programming and data to help people achieve their goals.
 
-My name is Nathan Sheppard. I am a freelance web developer, dedicated to helping startups get the online visibility that they need to succeed.
+My carreer and education have provided me with a unique set of skills to come up with innovative solutions. Data analysis, data visualization, and web development are my passion. There is nothing that I enjoy more than working with a group of professionals for a common purpose.
 
+[Email me](mailto:shep.nathan.d@gmail.com) if you would like a quote.

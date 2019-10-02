@@ -1,0 +1,20 @@
+---
+layout: default
+---
+
+{% assign collection = site[page.collection] %}
+{% if collection %}
+{% include title.html %}
+<div class="page">
+	<div class="page-content">
+	{{ content }}
+		<div class="row posts">
+		{% for post in collection %}
+			{% include post_card.html %}
+		{%- endfor -%}
+		</div>
+	</div>
+</div>
+{% else %}
+No collection defined.
+{% endif %}

@@ -1,7 +1,29 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html>
+{% include head.html %}
+<body>
+	{% include title.html %}
+	{% include header.html %}
+	<div class="content">
 
-<div class="home">
-	{{ content }}
-</div>
+	{%- assign date_format = site.date_format | default: "%-d %b %Y " -%}
+		<div class="page">
+			</div>
+			<div class="page-content">
+				{{ content }}
+				<div class="container">
+					<div class="row posts">
+						{%- for post in site.posts -%}
+							{% unless post.tags contains "work" %}
+								{% include post_card.html %}
+							{% endunless %}
+						{%- endfor -%}
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	{% include footer.html %}
+	{% include scripts.html %}
+</body>
+</html>
