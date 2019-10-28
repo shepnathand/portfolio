@@ -3,8 +3,8 @@ layout: home
 permalink: /
 ---
 
-I'm Nathan. I have experience using programming and data to help people achieve their goals.
+I'm Nathan. I have over three years of experience using programming for data analysis, data visualization, and web development.
 
-My carreer and education have provided me with a unique set of skills to come up with innovative solutions. Data analysis, data visualization, and web development are my passion. There is nothing that I enjoy more than working with a group of professionals for a common purpose.
+My carreer and education have provided me with a unique set of skills to come up with innovative solutions.
 
-[Email me](mailto:shep.nathan.d@gmail.com) if you would like a quote.
+[Email me](mailto:shep.nathan.d@gmail.com) if you would like to hire me or collaborate.
