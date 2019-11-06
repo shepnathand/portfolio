@@ -7,6 +7,9 @@ layout: default
 {% include title.html %}
 {% else %}
 {% capture custom_title %}
+{% if page.archive %}
+	archive: 
+{% endif %}
 {{ page.tag }}{% endcapture %}
 {% include title.html title=custom_title %}
 {% endif %}

@@ -1,6 +1,7 @@
 ---
 layout: tag
 title: data-vis
-tag: datavis
+permalink: /tag/data-vis
+tag: data-vis
 ---
 

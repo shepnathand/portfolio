@@ -65,6 +65,7 @@ img {
 }
 
 .page-content {
+    position: relative;
     padding-top: 4px;
 }
 

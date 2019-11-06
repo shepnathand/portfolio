@@ -34,6 +34,10 @@ port: 3000
 collections_dir: collections
 
 collections:
+  posts:
+    output: true
+  tag:
+    output: true
   archive:
     output: true
 

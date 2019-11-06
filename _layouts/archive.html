@@ -2,19 +2,16 @@
 layout: default
 ---
 
-{% assign collection = site[page.collection] %}
-{% if collection %}
 {% include title.html %}
 <div class="page">
 	<div class="page-content">
 	{{ content }}
 		<div class="row posts">
-		{% for post in collection %}
-			{% include post_card.html %}
+		{% for post in site.posts %}
+			{% if post.archive %}
+				{% include post_card.html %}
+			{% endif %}
 		{%- endfor -%}
 		</div>
 	</div>
 </div>
-{% else %}
-No collection defined.
-{% endif %}

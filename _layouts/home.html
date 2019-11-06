@@ -14,7 +14,7 @@
 				<div class="container">
 					<div class="row posts">
 						{%- for post in site.posts -%}
-							{% unless post.tags contains "work" %}
+							{% unless post.archive %}
 								{% include post_card.html %}
 							{% endunless %}
 						{%- endfor -%}
