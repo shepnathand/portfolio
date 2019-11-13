@@ -15,7 +15,7 @@
       <!-- populate navbar -->
       {%- for path in page_paths -%}
         {%- assign my_page = site.pages | where: "path", path | first -%}
-        {%- if 'archive data-vis development writing' contains my_page.title -%}
+        {%- if 'archive data-vis development' contains my_page.title -%}
           <li>
             <a href="{{ my_page.url | relative_url }}">
               {{ my_page.title | escape }}
