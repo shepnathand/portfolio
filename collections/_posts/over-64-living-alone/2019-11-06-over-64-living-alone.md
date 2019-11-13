@@ -6,6 +6,8 @@ categories: jekyll update
 tags: [ data-vis ]
 ---
 
+This is an interactive map displaying the number of homeowners 65 years old and older who are living alone in Chattanooga by census tract.
+
 <div>
 	<div>
 		<meta charset="utf-8">
