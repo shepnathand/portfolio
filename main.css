@@ -6,22 +6,32 @@
     transform: translate(-50%, -50%);
     height: 30px;
     background-color: white;
+    padding: 0;
+    margin: 0;
 }
 
 .site-title a {
-    float: none;;
+    float: none;
     text-align: center;
     padding: 14px 16px;
-    text-decoration: none;
+    text-decoration: none !important;
     color: black;
     font-size: 30px
+}
+
+.site-title ul {
+    list-style-type: none;
+}
+
+.site-title li {
+    display: inline;
 }
 
 .nav-wrapper {
     position: relative;
     overflow: hidden;
     width:100%;
-    height:80px;
+    height:70px;
     background-color: white;
 }
 
@@ -36,19 +46,30 @@
 .nav-wrapper hr {
     float: none;
     position: absolute;
-    top: 55%;
+    top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 75%;
 }
 
 .center {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
     float: none;
     position: absolute;
     top: 80%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 17px;
+}
+
+.center li {
+    display: inline;
+}
+
+.active {
+    text-decoration: line-through !important;
 }
 
 img {
