@@ -1,23 +1,26 @@
 {%- assign default_paths = site.pages | map: "path" -%}
 {%- assign page_paths = site.header_pages | default: default_paths -%}
-<div class="topnav" id="top">
-  <div class="site-title">
-    <a class="active" rel="author" href="{{ "/" | relative_url }}">
-      {{ site.title | escape }}
-    </a>
-  </div>
-  <hr></hr>
-  <div class="topnav-centered">
-    {%- if page_paths -%}
-    <!-- populate navbar -->
-    {%- for path in page_paths -%}
-      {%- assign my_page = site.pages | where: "path", path | first -%}
-      {%- if 'archive data-vis development writing' contains my_page.title -%}
-        <a href="{{ my_page.url | relative_url }}">
-          {{ my_page.title | escape }}
+<div class="container">
+  <div class="nav-wrapper">
+    <div class="topnav" id="top">
+      <div class="site-title">
+        <a rel="author" href="{{ "/" | relative_url }}">
+          {{ site.title | escape }}
         </a>
+      </div>
+    <hr></hr>
+    <div class="center">
+      {%- if page_paths -%}
+      <!-- populate navbar -->
+      {%- for path in page_paths -%}
+        {%- assign my_page = site.pages | where: "path", path | first -%}
+        {%- if 'archive data-vis development writing' contains my_page.title -%}
+          <a href="{{ my_page.url | relative_url }}">
+            {{ my_page.title | escape }}
+          </a>
+        {%- endif -%}
+      {%- endfor -%}
       {%- endif -%}
-    {%- endfor -%}
-    {%- endif -%}
+    </div>
   </div>
 </div>
