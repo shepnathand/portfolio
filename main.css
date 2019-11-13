@@ -17,7 +17,7 @@
     font-size: 30px
 }
 
-.topnav {
+.nav-wrapper {
     position: relative;
     overflow: hidden;
     width:100%;
@@ -25,7 +25,7 @@
     background-color: white;
 }
 
-.topnav a {
+.nav-wrapper a {
     float: left;
     color: black;
     text-align: center;
@@ -33,7 +33,7 @@
     text-decoration: none;
 }
 
-.topnav hr {
+.nav-wrapper hr {
     float: none;
     position: absolute;
     top: 55%;

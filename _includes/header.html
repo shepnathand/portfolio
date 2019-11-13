@@ -2,12 +2,11 @@
 {%- assign page_paths = site.header_pages | default: default_paths -%}
 <div class="container">
   <div class="nav-wrapper">
-    <div class="topnav" id="top">
-      <div class="site-title">
-        <a rel="author" href="{{ "/" | relative_url }}">
-          {{ site.title | escape }}
-        </a>
-      </div>
+    <div class="site-title">
+      <a rel="author" href="{{ "/" | relative_url }}">
+        {{ site.title | escape }}
+      </a>
+    </div>
     <hr></hr>
     <div class="center">
       {%- if page_paths -%}
