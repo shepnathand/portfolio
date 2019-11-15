@@ -7,6 +7,6 @@ $(document).ready(function() {
 
     $(function() {
     	var path = location.pathname;
-    	$("a[href='" + path + "']").addClass('active');
+    	$(".center li a[href='" + path + "']").addClass('active');
 	})
 });

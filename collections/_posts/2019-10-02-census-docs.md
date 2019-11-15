@@ -6,4 +6,6 @@ categories: jekyll update
 tags: [ development ]
 ---
 
-A website dedicated the documenting best-practices and challenges related to the Census Bureau's API. [![census-docs](/media/post_covers/census-docs.png)](https://adoring-wozniak-fc7a12.netlify.com/)
+A website dedicated the documenting best-practices and challenges related to the Census Bureau's API.
+
+[![census-docs](/media/post_covers/census-docs.png)](https://adoring-wozniak-fc7a12.netlify.com/)

@@ -4,8 +4,8 @@ var map = new mapboxgl.Map({
   container: 'map', // container id
   style: 'mapbox://styles/shepnathand/ck2gtu7sv1e061ctexel1njbc',
   center: [-85.15,35.225],
-  minZoom: 8,
-  maxZoom: 22,
+  minZoom: 9,
+  maxZoom: 9,
   zoom: 9,
   zoomControl: false
 });

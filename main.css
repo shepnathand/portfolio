@@ -72,7 +72,7 @@
     margin: 0px 20px 0px 20px;
 }
 
-.active {
+.active:hover {
     text-decoration: line-through !important;
 }
 
@@ -166,4 +166,16 @@ img {
     border-radius: 50%;
     width: 65px;
     height: 65px;
+}
+
+.not-found {
+    margin: 25vh auto;
+    max-width: 600px;
+    text-align: center;
+}
+.not-found h1 {
+    margin: 30px 0;
+    font-size: 4em;
+    line-height: 1;
+    letter-spacing: -1px;
 }
