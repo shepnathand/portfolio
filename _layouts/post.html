@@ -5,6 +5,7 @@ layout: default
 {%- assign date_format = site.date_format | default: "%-d %b %Y " -%}
 
 {% if page.cover %}
+	<img src="/media/post_covers/over-64-alone.png" alt="Image missing!" style="display:none;">
 	<div class="postCover" style='background-image: url("{{ page.cover }}")'></div>
 {% endif %}
 
