@@ -8,4 +8,4 @@ tags: [ development ]
 
 A website dedicated the documenting best-practices and challenges related to the Census Bureau's API.
 
-[![census-docs](/media/post_covers/census-docs.png)](https://adoring-wozniak-fc7a12.netlify.com/)
+[![census-docs](/media/post_covers/census-docs.png)](https://flamboyant-galileo-f88ad5.netlify.com/)
