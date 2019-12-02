@@ -179,3 +179,53 @@ img {
     line-height: 1;
     letter-spacing: -1px;
 }
+
+@media screen and (max-width: 800px) {
+    .page, .page-content, .page-title, .home-content, .content {
+        margin: 1%;
+        max-width: 98%;
+    }
+    .nav-wrapper {
+        height: 10vh;
+        width: 100vw;
+        max-height: 70px;
+        padding: 1px;
+        margin: 1px;
+        text-align: center;
+    }
+    .site-title a {
+        width: 100vw;
+        font-size: 20px;
+    }
+    .center {
+        list-style-type: none;
+        top: 60%;
+        width: 317px;
+        margin: auto;
+        text-align: center;
+    }
+    .center li a {
+        padding: 10px 0px 10px 0px;
+        font-size: 14px;
+    }
+    .nav-wrapper hr {
+        max-width: 95vw;
+        top: 30%;
+    }
+    .footer {
+        min-height: 20px;
+    }
+    .footer-left {
+        display: none;
+    }
+    .footer-center {
+        text-align: left;
+        width: 50vw;
+        margin: 1px;
+        padding: 1px;
+    }
+    .footer-right {
+        float: right;
+        margin-right: 2px;
+    }
+}
