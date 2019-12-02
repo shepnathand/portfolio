@@ -3,9 +3,9 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic2hlcG5hdGhhbmQiLCJhIjoiY2pmNDk3dnkxMTUzcDJ3c
 var map = new mapboxgl.Map({
   container: 'map', // container id
   style: 'mapbox://styles/shepnathand/ck2gtu7sv1e061ctexel1njbc',
-  center: [-85.15,35.225],
-  minZoom: 9,
-  maxZoom: 9,
+  center: [-85.21,35.225],
+  minZoom: 8,
+  maxZoom: 22,
   zoom: 9,
   zoomControl: false
 });

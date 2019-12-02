@@ -234,4 +234,7 @@ img {
         float: right;
         margin-right: 2px;
     }
+    #map {
+        height: 80vh;
+    }
 }

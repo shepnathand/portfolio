@@ -128,3 +128,9 @@ p {
     border-color: #3887BE;
     color: #FFF;
 }
+
+@media screen and (max-width: 800px) {
+  #map {
+    height: 80vh;
+  }
+}
