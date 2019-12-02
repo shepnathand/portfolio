@@ -202,14 +202,14 @@ img {
         top: 60%;
         width: 317px;
         margin: auto;
-        text-align: center;
+        transform: translate(-50%, -50%);
     }
     .center li a {
         padding: 10px 0px 10px 0px;
         font-size: 14px;
     }
     .nav-wrapper hr {
-        max-width: 95vw;
+        width: 100vw;
         top: 30%;
     }
     .footer {
