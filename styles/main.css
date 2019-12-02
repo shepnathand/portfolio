@@ -199,11 +199,15 @@ img {
         font-size: 20px;
     }
     .center {
+        position: absolute;
+        float: none;
+        margin: 0px;
+        padding: 0;
         list-style-type: none;
         top: 60%;
-        width: 317px;
         left: 50vw;
-        transform: translate(-50%, -50%);
+        min-width: 317px;
+        max-width: 100vw;
     }
     .center li a {
         padding: 10px 0px 10px 0px;
