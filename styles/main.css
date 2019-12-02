@@ -191,6 +191,9 @@ img {
         padding: 1px;
         margin: 1px;
     }
+    .site-title {
+        left: 50vw;
+    }
     .site-title a {
         width: 100vw;
         font-size: 20px;
@@ -199,7 +202,7 @@ img {
         list-style-type: none;
         top: 60%;
         width: 317px;
-        margin: auto;
+        left: 50vw;
         transform: translate(-50%, -50%);
     }
     .center li a {
