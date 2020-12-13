@@ -1,0 +1,23 @@
+# Jekyll 
+_site
+.sass-cache
+.jekyll-cache
+.jekyll-metadata
+
+# Node
+node_modules
+
+# Python
+__pycache__
+
+# Misc Directories
+public
+dist
+dest
+tmp
+
+# Misc Files
+*.log
+*.swp
+.DS_Store
+.env
